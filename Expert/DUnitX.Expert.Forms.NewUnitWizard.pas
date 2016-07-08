@@ -73,7 +73,7 @@ type
     { Private declarations }
   public
     { Public declarations }
-    property TestFixtureClasaName : string read GetTestFixtureClassName;
+    property TestFixtureClassName : string read GetTestFixtureClassName;
     property CreateSetupTearDownMethods : boolean read GetCreateSetupTearDownMethods;
     property CreateSampleMethods : boolean read GetCreateSampleMethods;
 

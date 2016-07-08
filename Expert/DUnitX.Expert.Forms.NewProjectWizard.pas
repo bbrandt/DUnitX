@@ -78,7 +78,7 @@ type
   public
     { Public declarations }
     // Read Only Properties to extract values without having to know control values.
-    property TestFixtureClasaName : string read GetTestFixtureClassName;
+    property TestFixtureClassName : string read GetTestFixtureClassName;
     property CreateSetupTearDownMethods : boolean read GetCreateSetupTearDownMethods;
     property CreateSampleMethods : boolean read GetCreateSampleMethods;
     property CreateTestUnit : boolean read GetCreateTestUnit;

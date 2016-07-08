@@ -79,7 +79,7 @@ var
 {$ENDIF}
 begin
   {$IFNDEF DELPHIX_SEATTLE_UP}
-  result := TSourceFile.Create(STestDPR,[ProjectName]);
+  result := TSourceFile.Create(STestCBPROJ,[ProjectName]);
   {$ELSE}
   if Personality.isEmpty or SameText(Personality, sDelphiPersonality) then
     TestProjectCode := STestDPR

@@ -92,8 +92,8 @@ var
 begin
    if FCreateSetupTearDown then
    begin
-     lSetupTearDownIntf := SSetupTearDownIntf;
-     lSetupTearDownImpl := Format(SSetupTearDownImpl,[FTestFixureClassName]);
+     lSetupTearDownIntf := SSetupTearDownCPPIntf;
+     lSetupTearDownImpl := Format(SSetupTearDownCPPImpl,[FTestFixureClassName]);
    end
    else
    begin
@@ -103,8 +103,8 @@ begin
 
    if FCreateSampleMethods then
    begin
-     lSampleIntf := SSampleMethodsIntf;
-     lSampleImpl := Format(SSampleMethodsImpl,[FTestFixureClassName]);
+     lSampleIntf := SSampleMethodsCPPIntf;
+     lSampleImpl := Format(SSampleMethodsCPPImpl,[FTestFixureClassName]);
    end
    else
    begin
@@ -116,7 +116,7 @@ begin
    // http://stackoverflow.com/questions/4196412/how-do-you-retrieve-a-new-unit-name-from-delphis-open-tools-api
    // So using method mentioned by Marco Cantu.
    (BorlandIDEServices as IOTAModuleServices).GetNewModuleAndClassName( '', lUnitIdent, lFormName, lFileName);
-   result := TSourceFile.Create(STestUnit,[lUnitIdent,FTestFixureClassName,lSetupTearDownIntf,
+   result := TSourceFile.Create(STestCPPUnit,[lUnitIdent,FTestFixureClassName,lSetupTearDownIntf,
                                            lSampleIntf,lSetupTearDownImpl,lSampleImpl]);
 
 end;

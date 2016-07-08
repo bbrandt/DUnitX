@@ -104,7 +104,7 @@ begin
       TestUnit := ModuleServices.CreateModule(
                        TNewTestUnit.Create(WizardForm.CreateSetupTearDownMethods,
                                            WizardForm.CreateSampleMethods,
-                                           WizardForm.TestFixtureClasaName ));
+                                           WizardForm.TestFixtureClassName ));
       Project.AddFile(TestUnit.FileName,true);
     end;
   finally
