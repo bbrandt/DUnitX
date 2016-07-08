@@ -52,3 +52,6 @@ Examples/Win64/
 Examples/OSX32/
 
 
+*.local
+twfiles.@@@
+artifacts

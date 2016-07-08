@@ -127,7 +127,7 @@ end;
 
 function TNewProject.GetProjectPersonality: string;
 begin
- result := sDelphiPersonality;
+ result := sCBuilderPersonality;
 end;
 
 function TNewProject.GetShowSource: Boolean;
@@ -185,7 +185,7 @@ end;
 function TNewProjectEx.GetProjectPersonality: string;
 begin
  if FPersonality.IsEmpty then
-   result := sDelphiPersonality
+   result := sCBuilderPersonality
  else
    result := FPersonality;
 end;

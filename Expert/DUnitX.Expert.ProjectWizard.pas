@@ -148,7 +148,7 @@ end;
 
 function TDUnitXNewProjectWizard.GetGalleryCategory: IOTAGalleryCategory;
 begin
-  result :=  (BorlandIDEServices as IOTAGalleryCategoryManager).FindCategory(sCategoryDelphiNew);
+  result :=  (BorlandIDEServices as IOTAGalleryCategoryManager).FindCategory(sCategoryCBuilderNew);
 end;
 
 function TDUnitXNewProjectWizard.GetGlyph: Cardinal;
@@ -169,12 +169,12 @@ end;
 function TDUnitXNewProjectWizard.GetPage: string;
 begin
  // Results not used if IOTARepositoryWizard80.GetGalleryCategory implemented
-  result := 'Delphi Project';
+  result := 'C++Builder Project';
 end;
 
 function TDUnitXNewProjectWizard.GetPersonality: string;
 begin
- result := sDelphiPersonality;
+ result := sCBuilderPersonality;
 end;
 
 function TDUnitXNewProjectWizard.GetState: TWizardState;

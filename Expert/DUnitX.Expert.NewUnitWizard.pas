@@ -130,7 +130,7 @@ end;
 function TDUnitXNewUnitWizard.GetGalleryCategory: IOTAGalleryCategory;
 begin
   result := (BorlandIDEServices as IOTAGalleryCategoryManager)
-    .FindCategory(sCategoryDelphiNewFiles);
+    .FindCategory(sCategoryCBuilderNewFiles);
 end;
 
 function TDUnitXNewUnitWizard.GetGlyph: Cardinal;
@@ -150,12 +150,12 @@ end;
 
 function TDUnitXNewUnitWizard.GetPage: string;
 begin
-  result := 'Delphi Files';
+  result := 'C++Builder Files';
 end;
 
 function TDUnitXNewUnitWizard.GetPersonality: string;
 begin
-  result := sDelphiPersonality;
+  result := sCBuilderPersonality;
 end;
 
 function TDUnitXNewUnitWizard.GetState: TWizardState;
